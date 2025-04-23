@@ -10,9 +10,9 @@ public class Hero2 extends Actor
         }
         
         if(atBottom){
-            setLocation(300, 300);
-        }else{
             setLocation(300, 100);
+        }else{
+            setLocation(300, 300);
         }
     }
 }

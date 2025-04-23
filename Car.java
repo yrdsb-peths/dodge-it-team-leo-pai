@@ -20,6 +20,11 @@ public class Car extends Actor
             getWorld().addObject (end, 300, 200);
             getWorld().removeObject(this);
         }
+        if (isTouching(Hero2.class)){
+            End end = new End();
+            getWorld().addObject (end, 300, 200);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetCar(){

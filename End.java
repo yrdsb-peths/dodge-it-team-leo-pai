@@ -14,6 +14,7 @@ public class End extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        System.out.println("Game Over!");
+        Greenfoot.stop();
     }
 }
