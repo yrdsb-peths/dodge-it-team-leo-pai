@@ -9,5 +9,8 @@ public class MyWorld extends World {
         
         Car car = new Car();
         addObject(car, 600, 100);
+        
+        Jet jet = new Jet();
+        addObject(jet, 600, 200);
     }
 }
