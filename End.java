@@ -14,6 +14,8 @@ public class End extends Actor
      */
     public void act()
     {
+        setImage("tux.png");
+        System.out.println("Game Over");
         Greenfoot.stop();
     }
 }

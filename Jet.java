@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Jet extends Actor
 {
    boolean visible = true;
-
     public void act() {
+        setImage("rocket.png");
         if (!visible) {
             maybeRespawn();
             return;

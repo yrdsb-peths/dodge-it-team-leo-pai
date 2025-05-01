@@ -11,6 +11,7 @@ public class Car extends Actor
     private boolean isRemoved = false; 
     
     public void act() {
+        setImage("bus-4.png");
         if (isRemoved){ 
             return;
         }

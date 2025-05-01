@@ -5,6 +5,7 @@ public class Hero2 extends Actor
     boolean atBottom = false;
     public void act()
     {
+        setImage("ppl3.png");
         if(Greenfoot.mouseClicked(null)){
             atBottom = !atBottom;
         }

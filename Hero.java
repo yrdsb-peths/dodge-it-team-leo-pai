@@ -7,6 +7,7 @@ public class Hero extends Actor
     boolean side = true;
     public void act()
     {
+        setImage("ppl1.png");
         if(atTop){
             setLocation(100, 100);
             if(Greenfoot.mouseClicked(null)){
