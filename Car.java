@@ -8,22 +8,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Car extends Actor
 {
+    private boolean isRemoved = false; 
+    
     public void act() {
+        if (isRemoved){ 
+            return;
+        }
         move(-10);
         
         if (getX() <= 0) {
             resetCar();
         }
         
-        if (isTouching(Hero.class)){
+        if (isTouching(Hero.class) || isTouching(Hero2.class)){
             End end = new End();
             getWorld().addObject (end, 300, 200);
             getWorld().removeObject(this);
-        }
-        if (isTouching(Hero2.class)){
-            End end = new End();
-            getWorld().addObject (end, 300, 200);
-            getWorld().removeObject(this);
+            isRemoved = true;
         }
     }
     
